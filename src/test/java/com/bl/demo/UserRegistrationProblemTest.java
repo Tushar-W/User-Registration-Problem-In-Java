@@ -57,4 +57,10 @@ public class UserRegistrationProblemTest {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
         Assert.assertTrue(userRegistrationProblem.checkValidatePassword("123abc45ff"));
     }
+
+    @Test
+    public void givenPassword_WhenInvalid_ShouldReturnFalse() {
+        UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
+        Assert.assertFalse(userRegistrationProblem.checkValidatePassword("123abc@45ff"));
+    }
 }
