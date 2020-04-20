@@ -33,4 +33,10 @@ public class UserRegistrationProblemTest {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
         Assert.assertTrue(userRegistrationProblem.checkValidateEmail("abc.xyz@bl.co.in"));
     }
+
+    @Test
+    public void givenEmail_WhenInvalid_ShouldReturnFalse() {
+        UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
+        Assert.assertFalse(userRegistrationProblem.checkValidateEmail("a@.com"));
+    }
 }
