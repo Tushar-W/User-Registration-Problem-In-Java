@@ -45,4 +45,10 @@ public class UserRegistrationProblemTest {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
         Assert.assertTrue(userRegistrationProblem.checkValidateMobileNumber("91 9561782554"));
     }
+
+    @Test
+    public void givenMobileNumber_WhenInvalid_ShouldReturnFalse() {
+        UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
+        Assert.assertFalse(userRegistrationProblem.checkValidateMobileNumber("9988776556"));
+    }
 }
