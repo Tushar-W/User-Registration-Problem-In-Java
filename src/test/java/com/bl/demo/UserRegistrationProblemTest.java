@@ -1,7 +1,6 @@
 package com.bl.demo;
 
 import org.junit.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class UserRegistrationProblemTest {
@@ -27,5 +26,11 @@ public class UserRegistrationProblemTest {
     public void givenLastName_WhenShort_ShouldReturnFalse() {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
         Assert.assertFalse(userRegistrationProblem.checkValidateName("Wa"));
+    }
+
+    @Test
+    public void givenEmail_WhenValid_ShouldReturnTrue() {
+        UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
+        Assert.assertTrue(userRegistrationProblem.checkValidateEmail("abc.xyz@bl.co.in"));
     }
 }
