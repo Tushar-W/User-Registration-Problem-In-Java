@@ -6,6 +6,7 @@ public class UserRegistrationProblem {
     public final String NAME_PATTERN = "^[A-Z]{1}[a-z]{3,}$";
     public final String EMAIL_PATTERN = "^[0-9a-zA-Z]{1,}([._+-]{1}[a-zA-Z]+)?[@][0-9a-zA-Z]{1,}[.][a-z]{2,4}([.]{1}[a-z]{2})?$";
     public final String MOBILE_NO_PATTERN="^[0-9]{1,3}[ ][6-9]{1}[0-9]{9}$";
+    public final String PASSWORD_PATTERN = "^[a-zA-Z0-9]{8,}$";
 
     public boolean checkValidateName(String name) {
         return Pattern.matches(NAME_PATTERN,name);
@@ -17,5 +18,9 @@ public class UserRegistrationProblem {
 
     public boolean checkValidateMobileNumber(String mobileNumber) {
         return Pattern.matches(MOBILE_NO_PATTERN,mobileNumber);
+    }
+
+    public boolean checkValidatePassword(String password) {
+        return Pattern.matches(PASSWORD_PATTERN,password);
     }
 }
