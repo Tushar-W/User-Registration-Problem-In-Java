@@ -9,4 +9,10 @@ public class UserRegistrationProblemTest {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
         Assert.assertTrue(userRegistrationProblem.checkValidateName("Tushar"));
     }
+
+    @Test
+    public void givenName_WhenShort_ShouldReturnFalse() {
+        UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
+        Assert.assertFalse(userRegistrationProblem.checkValidateName("Tu"));
+    }
 }
