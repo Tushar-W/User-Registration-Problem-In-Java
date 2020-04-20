@@ -22,4 +22,10 @@ public class UserRegistrationProblemTest {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
         Assert.assertTrue(userRegistrationProblem.checkValidateName("Wankhede"));
     }
+
+    @Test
+    public void givenLastName_WhenShort_ShouldReturnFalse() {
+        UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
+        Assert.assertFalse(userRegistrationProblem.checkValidateName("Wa"));
+    }
 }
