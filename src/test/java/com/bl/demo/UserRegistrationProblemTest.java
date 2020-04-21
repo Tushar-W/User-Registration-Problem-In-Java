@@ -67,6 +67,6 @@ public class UserRegistrationProblemTest {
     @Test
     public void givenPassword_WhenAtLeastOneUpperCase_ShouldReturnTrue() {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
-        Assert.assertFalse(userRegistrationProblem.checkValidatePassword("abc45fF"));
+        Assert.assertFalse(userRegistrationProblem.checkValidatePassword("Abc45f"));
     }
 }
