@@ -93,4 +93,10 @@ public class UserRegistrationProblemTest {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
         Assert.assertTrue(userRegistrationProblem.checkValidatePassword3("tushar@95Barca"));
     }
+
+    @Test
+    public void givenPassword_WhenNotExactlyOneSpecialCharacter_ShouldReturnFalse() {
+        UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
+        Assert.assertFalse(userRegistrationProblem.checkValidatePassword3("tushar95Barca"));
+    }
 }
