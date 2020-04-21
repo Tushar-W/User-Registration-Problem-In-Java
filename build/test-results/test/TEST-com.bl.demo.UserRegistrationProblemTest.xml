@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.demo.UserRegistrationProblemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-21T05:17:39" hostname="DESKTOP-2TJPHRI" time="0.007">
+<testsuite name="com.bl.demo.UserRegistrationProblemTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-21T06:24:29" hostname="DESKTOP-2TJPHRI" time="0.016">
   <properties/>
-  <testcase name="givenPassword_WhenExactlyOneSpecialCharacter_ShouldReturnTrue" classname="com.bl.demo.UserRegistrationProblemTest" time="0.007"/>
+  <testcase name="givenLastName_WhenValid_ShouldReturnTrue" classname="com.bl.demo.UserRegistrationProblemTest" time="0.001"/>
+  <testcase name="givenPassword_WhenInvalid_ShouldReturnFalse" classname="com.bl.demo.UserRegistrationProblemTest" time="0.001"/>
+  <testcase name="givenMobileNumber_WhenValid_ShouldReturnTrue" classname="com.bl.demo.UserRegistrationProblemTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenValid_ShouldReturnTrue" classname="com.bl.demo.UserRegistrationProblemTest" time="0.0"/>
+  <testcase name="givenLastName_WhenShort_ShouldReturnFalse" classname="com.bl.demo.UserRegistrationProblemTest" time="0.001"/>
+  <testcase name="givenPassword_WhenValid_ShouldReturnTrue" classname="com.bl.demo.UserRegistrationProblemTest" time="0.003"/>
+  <testcase name="givenEmail_WhenValid_ShouldReturnTrue" classname="com.bl.demo.UserRegistrationProblemTest" time="0.001"/>
+  <testcase name="givenEmail_WhenInvalid_ShouldReturnFalse" classname="com.bl.demo.UserRegistrationProblemTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenShort_ShouldReturnFalse" classname="com.bl.demo.UserRegistrationProblemTest" time="0.0"/>
+  <testcase name="givenMobileNumber_WhenInvalid_ShouldReturnFalse" classname="com.bl.demo.UserRegistrationProblemTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
