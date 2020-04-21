@@ -8,6 +8,7 @@ public class UserRegistrationProblem {
     public final String MOBILE_NO_PATTERN="^[0-9]{1,3}[ ][6-9]{1}[0-9]{9}$";
     public final String PASSWORD_PATTERN = "^[a-zA-Z0-9]{8,}$";
     public final String PASSWORD_PATTERN1 = "^(?=.*[A-Z])[a-zA-Z0-9]{8,}$";
+    public final String PASSWORD_PATTERN2 = "^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$";
 
     public boolean checkValidateName(String name) {
         return Pattern.matches(NAME_PATTERN,name);
@@ -27,5 +28,9 @@ public class UserRegistrationProblem {
 
     public boolean checkValidatePassword1(String password) {
         return Pattern.matches(PASSWORD_PATTERN1,password);
+    }
+
+    public boolean checkValidatePassword2(String password) {
+        return Pattern.matches(PASSWORD_PATTERN2,password);
     }
 }
