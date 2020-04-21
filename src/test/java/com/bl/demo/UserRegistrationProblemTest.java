@@ -81,4 +81,10 @@ public class UserRegistrationProblemTest {
         UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
         Assert.assertTrue(userRegistrationProblem.checkValidatePassword2("Abc456ff"));
     }
+
+    @Test
+    public void givenPassword_WhenNotAtLeastOneNumericNumber_ShouldReturnFalse() {
+        UserRegistrationProblem userRegistrationProblem = new UserRegistrationProblem();
+        Assert.assertFalse(userRegistrationProblem.checkValidatePassword2("Abcff"));
+    }
 }
